@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Code Compiler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Online Code Compiler</h1>
+        <select id="language">
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+        </select>
+        <textarea id="userCode" placeholder="Write your code here..."></textarea>
+        
+        <button onclick="runCode()">Run Code</button>
+        <pre id="output"></pre>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
